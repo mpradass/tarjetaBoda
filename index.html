@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#541a26" />
+    <meta name="description" content="Una invitación de boda hecha con cariño. Nos encantará compartir este día contigo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title>Lucía &amp; Mateo · Nuestra boda</title>
+  </head>
+  <body>
+    <main>
+      <section class="cover" id="inicio" aria-labelledby="cover-title">
+        <div class="cover__grain" aria-hidden="true"></div>
+        <p class="eyebrow cover__eyebrow">Una invitación para celebrar</p>
+        <div class="invitation" id="invitation">
+          <div class="invitation__frame">
+            <p class="invitation__label">Reserva la fecha</p>
+            <div class="invitation__window">
+              <img src="/images/photo-couple.jpg" alt="Lucía y Mateo juntos, en una fotografía en blanco y negro" />
+            </div>
+            <p class="invitation__date" data-date-short>22 · 05 · 2027</p>
+            <h1 class="invitation__names script" data-names>Lucía <span>&amp;</span> Mateo</h1>
+            <button class="open-button" id="open-invitation" type="button" aria-expanded="false" aria-controls="photo-strip">
+              Abrir invitación <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="photo-strip" id="photo-strip" aria-hidden="true">
+            <figure><img src="/images/photo-one.jpg" alt="" /><figcaption>el comienzo</figcaption></figure>
+            <figure><img src="/images/photo-two.jpg" alt="" /><figcaption>nuestro lugar</figcaption></figure>
+            <figure><img src="/images/photo-three.jpg" alt="" /><figcaption>para siempre</figcaption></figure>
+          </div>
+        </div>
+        <p class="cover__hint">Desliza para descubrir nuestra historia <span aria-hidden="true">↓</span></p>
+        <span class="cover__seal" aria-hidden="true">L <i>&amp;</i> M</span>
+      </section>
+
+      <section class="intro section-wrap" aria-labelledby="cover-title">
+        <p class="eyebrow">Con mucha ilusión</p>
+        <h2 id="cover-title">¡Nos casamos!</h2>
+        <p class="intro__names script" data-names>Lucía <span>&amp;</span> Mateo</p>
+        <p class="intro__copy">Y queremos celebrar este nuevo capítulo junto a las personas que más queremos.</p>
+        <div class="ornament" aria-hidden="true"><span></span> ❧ <span></span></div>
+      </section>
+
+      <section class="collage section-wrap" aria-label="Nuestra invitación">
+        <div class="collage__photo collage__photo--left paper-frame">
+          <img src="/images/photo-one.jpg" alt="Retrato en blanco y negro de una pareja paseando" loading="lazy" />
+          <span class="photo-note">un día cualquiera, juntos</span>
+        </div>
+        <article class="postcard paper" aria-labelledby="postcard-title">
+          <span class="postcard__stamp" aria-hidden="true">✿</span>
+          <span class="eyebrow">Guarda esta fecha</span>
+          <h2 id="postcard-title" class="postcard__date" data-date-long>Sábado, 22 de mayo de 2027</h2>
+          <p class="postcard__place" data-venue>Finca Los Olivos · Granada</p>
+          <div class="postcard__rule" aria-hidden="true"></div>
+          <p data-invitation-message>Nos haría muchísima ilusión que nos acompañaras en el día con el que llevamos tanto tiempo soñando.</p>
+          <p class="postcard__signoff script" data-names>Lucía <span>&amp;</span> Mateo</p>
+          <span class="postcard__postmark" aria-hidden="true">HECHO<br />CON AMOR</span>
+        </article>
+        <div class="collage__photo collage__photo--right paper-frame">
+          <img src="/images/photo-two.jpg" alt="Dos personas tomadas de la mano al atardecer" loading="lazy" />
+          <span class="photo-note">granada, mayo 2027</span>
+        </div>
+        <div class="collage__flower" aria-hidden="true">✿</div>
+      </section>
+
+      <section class="details section-wrap" aria-labelledby="details-title">
+        <p class="eyebrow">El día que empieza todo</p>
+        <h2 id="details-title">Ceremonia &amp; celebración</h2>
+        <div class="details__columns">
+          <div><span class="detail-mark" aria-hidden="true">01</span><h3>Cuándo</h3><p data-ceremony-date>Sábado, 22 de mayo de 2027</p><p data-ceremony-time>17:00 h</p></div>
+          <div><span class="detail-mark" aria-hidden="true">02</span><h3>Dónde</h3><p data-venue>Finca Los Olivos · Granada</p><p data-address>Camino de la Vega, Granada</p></div>
+        </div>
+        <div class="details__actions">
+          <a class="text-link" id="map-link" href="https://maps.google.com/?q=Finca+Los+Olivos+Granada" target="_blank" rel="noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a>
+          <a class="calendar-button" id="calendar-link" href="#details-title">Guardar la fecha <span aria-hidden="true">＋</span></a>
+        </div>
+      </section>
+
+      <section class="countdown section-wrap" aria-labelledby="countdown-title">
+        <p class="eyebrow">Ya queda menos</p>
+        <h2 id="countdown-title">La cuenta atrás</h2>
+        <div class="countdown__grid" id="countdown" aria-live="off">
+          <div><span class="countdown__number" data-days>000</span><span class="countdown__unit">días</span></div>
+          <div><span class="countdown__number" data-hours>00</span><span class="countdown__unit">horas</span></div>
+          <div><span class="countdown__number" data-minutes>00</span><span class="countdown__unit">minutos</span></div>
+          <div><span class="countdown__number" data-seconds>00</span><span class="countdown__unit">segundos</span></div>
+        </div>
+        <p class="countdown__message" id="countdown-message" role="status" hidden>¡Hoy celebramos el amor! Gracias por estar aquí.</p>
+      </section>
+
+      <section class="story section-wrap" aria-labelledby="story-title">
+        <div class="story__paper paper">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="story__image"><img src="/images/photo-three.jpg" alt="Lucía y Mateo compartiendo un momento especial" loading="lazy" /></div>
+          <div class="story__copy">
+            <p class="eyebrow">Un poquito de nosotros</p>
+            <h2 id="story-title">Nuestra historia</h2>
+            <p data-story>Nos conocimos por casualidad y nos quedamos por elección. Desde entonces coleccionamos viajes improvisados, sobremesas largas y domingos sin prisa. Hoy nos hace ilusión comenzar nuestra aventura favorita: la que viene.</p>
+            <p class="script story__signature" data-names>Lucía <span>&amp;</span> Mateo</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule section-wrap" aria-labelledby="schedule-title">
+        <p class="eyebrow">Sin prisa, pero sin perdernos nada</p>
+        <h2 id="schedule-title">Programa del día</h2>
+        <ol class="schedule__list" id="schedule-list"></ol>
+      </section>
+
+      <section class="rsvp section-wrap" aria-labelledby="rsvp-title">
+        <p class="eyebrow">Tu compañía es el mejor regalo</p>
+        <h2 id="rsvp-title">¿Nos acompañas?</h2>
+        <p>Confírmanos antes del <span data-rsvp-deadline>30 de abril de 2027</span>.</p>
+        <a class="rsvp__button" id="rsvp-link" href="" target="_blank" rel="noreferrer">Confirmar asistencia <span aria-hidden="true">↗</span></a>
+        <p class="rsvp__note" id="rsvp-note">En esta invitación de ejemplo todavía no hay un formulario conectado.</p>
+      </section>
+
+      <footer class="closing">
+        <div class="closing__photo"><img src="/images/photo-couple.jpg" alt="Lucía y Mateo, felices de compartir este día contigo" loading="lazy" /></div>
+        <p class="eyebrow">Con todo nuestro cariño</p>
+        <p class="closing__names script" data-names>Lucía <span>&amp;</span> Mateo</p>
+        <p class="closing__date" data-date-short>22 · 05 · 2027</p>
+        <a class="closing__contact" data-contact href="mailto:hola@bodadeejemplo.es">hola@bodadeejemplo.es</a>
+        <p class="closing__credit">Una invitación hecha con cariño</p>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
